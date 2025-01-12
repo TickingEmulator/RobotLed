@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.PWM.PeriodMultiplier;
 import edu.wpi.first.wpilibj2.command.Command;
 
 public class LedSubsystem extends Command {
-    private final PWM pwmChannel = new  PWM(0);
+    private final PWM pwmChannel = new PWM(0);
     public LedSubsystem(){
         pwmChannel.setPeriodMultiplier(PeriodMultiplier.k1X);
         pwmChannel.setBoundsMicroseconds(2000, 0, 0, 0, 1000); // note: unsure about dbm, center, and dbmin
