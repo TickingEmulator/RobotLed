@@ -21,8 +21,8 @@ public class RobotContainer {
 
   private void configureBindings() {
     new JoystickButton(operatorJoystick, 1).onTrue(new changeLed(m_LedSubsystem).changeTo(LedState.kBREATH_RED));
-    new JoystickButton(operatorJoystick, 1).onTrue(new changeLed(m_LedSubsystem).changeTo(LedState.kPARTY_PALETTE));
-    new JoystickButton(operatorJoystick, 1).onTrue(new changeLed(m_LedSubsystem).changeTo(LedState.kBREATH_RED));
+    new JoystickButton(operatorJoystick, 2).onTrue(new changeLed(m_LedSubsystem).changeTo(LedState.kPARTY_PALETTE));
+    new JoystickButton(operatorJoystick, 3).onTrue(new changeLed(m_LedSubsystem).changeTo(LedState.kBREATH_RED));
 
   }
 
