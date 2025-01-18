@@ -16,7 +16,8 @@ public class LedSubsystem extends Command {
         kGREEN
     }
     private LedState ledState = LedState.kBREATH_RED;
-    public void setLedState(LedState state){
+    public void setLedState(LedState ledState){
+        this.ledState = ledState;
         pwmChannel.setSpeed(switch(ledState){
             case kPARTY_PALETTE -> -0.97;
             case kBREATH_RED -> -0.17;
